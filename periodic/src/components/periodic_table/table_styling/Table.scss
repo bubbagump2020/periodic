@@ -1,0 +1,39 @@
+.table-wrapper{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1900px;
+}
+
+.element{
+    text-align: center;
+    border: 1px solid;
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#table{
+    display: grid;
+    grid-template-columns: repeat(17, auto) 1fr;
+}
+
+.element-1{
+    grid-column-start: -2;
+}
+
+.element-4,
+.element-12{
+    grid-column-start: 13;
+}
+
+// .element-57,
+// .element-89 {
+//   grid-column-start: 3;
+// }
+
+
+
+.element-119{
+    grid-column-start: -2;
+}

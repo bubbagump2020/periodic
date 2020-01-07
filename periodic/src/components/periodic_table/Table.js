@@ -1,5 +1,5 @@
 import React from 'react'
-import './table_styling/Table.scss'
+import './table_styling/Table.css'
 import {elements} from '../../PeriodicTableJSON.json'
 import ElementCard from './ElementCard'
 

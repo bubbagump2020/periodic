@@ -81,10 +81,42 @@
     grid-column-start: -2;
 }
 
+.diatomic{
+    background-color: yellow;
+}
+
+.polyatomic{
+    background-color: yellow;
+}
+
+.noble{
+    background-color: lightblue;
+}
+
+.metalloid{
+    background-color: lightyellow; 
+}
+
 .alkali{
     background-color: lightcoral;
 }
 
+.alkaline{
+    background-color: lightsalmon;
+}
+
 .transition{
     background-color: lightpink;
+}
+
+.post-transition{
+    background-color: lightgray;
+}
+
+.lanthanide{
+    background-color: violet;
+}
+
+.actinide{
+    background-color: #ff33cc; 
 }

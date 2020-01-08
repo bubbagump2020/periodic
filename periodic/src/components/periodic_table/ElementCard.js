@@ -8,11 +8,12 @@ class ElementCard extends React.Component {
 
 
     render(){
-        let { num } = this.props
-        let element = elements[num]
+        let num = this.props.attributes.atomicNumber.toString()
+        let element = this.props.attributes
+
         return(
             <div className={`element element-${num}`}>
-                <p>{element.number}</p>
+                <p>{num}</p>
                 <p><strong>{element.symbol}</strong></p>
                 <p>{element.name}</p>
             </div>

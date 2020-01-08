@@ -16,24 +16,75 @@
 #table{
     display: grid;
     grid-template-columns: repeat(17, auto) 1fr;
+    grid-template-rows: repeat(10, auto) 1fr;
 }
 
-.element-1{
+#information{
+    grid-column: 3/13;
+    grid-row: 2/4;
+    background-color: lightgreen;
+    padding: 0.5vw;
+}
+
+.element-2{
     grid-column-start: -2;
 }
 
-.element-4,
-.element-12{
+.element-5,
+.element-13{
     grid-column-start: 13;
 }
 
- /* .element-57, */
- /* .element-89 { */
-   /* grid-column-start: 3; */
- /* } */
+.element-72{
+   grid-column-start: 4;
+}
 
+.element-104{
+    grid-column-start: 4;
+}
 
+.element-58,
+.element-59,
+.element-60,
+.element-61,
+.element-62,
+.element-63,
+.element-64,
+.element-65,
+.element-66,
+.element-67,
+.element-68,
+.element-69,
+.element-70,
+.element-71{
+    grid-row-start: 9;
+}
+
+.element-90,
+.element-91,
+.element-92,
+.element-93,
+.element-94,
+.element-95,
+.element-96,
+.element-97,
+.element-98,
+.element-99,
+.element-100,
+.element-101,
+.element-102,
+.element-103{
+    grid-row-start: 10;
+}
 
 .element-119{
     grid-column-start: -2;
+}
+
+.alkali{
+    background-color: lightcoral;
+}
+
+.transition{
+    background-color: lightpink;
 }

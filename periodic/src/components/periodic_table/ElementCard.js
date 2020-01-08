@@ -1,18 +1,17 @@
 import React from 'react'
-import { elements } from '../../PeriodicTableJSON.json'
 
 class ElementCard extends React.Component {
 
-
-
-
+    openInfo = e => {
+        this.props.showInfo(this.props.num)
+    }
 
     render(){
-        let { num } = this.props
-        let element = elements[num]
+        let num = this.props.attributes.number.toString()
+        let element = this.props.attributes
         return(
-            <div className={`element element-${num}`}>
-                <p>{element.number}</p>
+            <div className={`element element-${num} ${element.category}`} onClick={this.openInfo}>
+                <p>{num}</p>
                 <p><strong>{element.symbol}</strong></p>
                 <p>{element.name}</p>
             </div>

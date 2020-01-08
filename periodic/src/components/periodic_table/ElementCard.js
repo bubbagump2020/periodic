@@ -1,16 +1,11 @@
 import React from 'react'
-import { elements } from '../../PeriodicTableJSON.json'
 
 class ElementCard extends React.Component {
 
-
-
-
-
     render(){
-        let num = this.props.attributes.atomicNumber.toString()
+        let num = this.props.attributes.number.toString()
         let element = this.props.attributes
-
+        console.log(element)
         return(
             <div className={`element element-${num}`}>
                 <p>{num}</p>

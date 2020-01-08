@@ -1,29 +1,19 @@
 import React from 'react'
 import './table_styling/Table.css'
-import {elements} from '../../PeriodicTableJSON.json'
 import ElementCard from './ElementCard'
+import { elements } from '../../PeriodicTableJSON.json'
 
 class Table extends React.Component {
 
     state = {
-        elements: []
-    }
-
-    componentDidMount(){
-        const fetchElements = async () =>{
-            let result = await fetch('https://neelpatel05.pythonanywhere.com/')
-            let response = await result.json()
-            this.setState({
-                elements: response
-            })
-        }
-        fetchElements()
+        elements: elements
     }
 
     createTable = () => {
         return this.state.elements.map(element => {
+            console.log(element)
             return(
-                <ElementCard attributes={element} key={element.atomicNumber} />
+                <ElementCard attributes={element} key={element.number} />
             )
         })
     }

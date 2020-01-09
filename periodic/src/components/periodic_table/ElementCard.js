@@ -11,9 +11,9 @@ class ElementCard extends React.Component {
         let element = this.props.attributes
         return(
             <div className={`element element-${num} ${element.category}`} onClick={this.openInfo}>
-                <p>{num}</p>
-                <p><strong>{element.symbol}</strong></p>
-                <p>{element.name}</p>
+                <div className="element-number">{num}</div>
+                <div className="element-symbol">{element.symbol}</div>
+                <div className="element-name">{element.name}</div>
             </div>
         )
     }

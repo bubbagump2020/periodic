@@ -60,7 +60,27 @@ class Table extends React.Component {
                             <div id="element-information-box">
                                 <button id="close-button" onClick={this.closeInfo} title="X">X</button>
                                 <h1 className="element-title">{name}</h1>
-                                <div>Appearance: </div>
+                                <span className={`category ${category}`}>{category}</span>
+                                {appearance ? (
+                                    <div className="element-appearance">
+                                        <strong>Appearance:</strong> {appearance}    
+                                    </div>
+                                ) : (
+                                    ''
+                                )}
+                                <div className="atomic-attributes">
+                                    <span>Atomic Mass: {atomic_mass} | </span>
+                                    <span>Density: {density}</span>
+                                    {molar_heat ? <span> | Molar Heat: {molar_heat} </span> : '' }
+                                    {melt ? <span> | Melting Point: {melt} </span> : '' }
+                                    {boil ? <span> | Boiling Point: {boil} </span> : '' }
+                                </div>
+                                <div>
+                                    {summary}<br></br>
+                                    <a target="_blank" href={source}>
+                                        Source
+                                    </a>
+                                </div>
                             </div>
                         </Fragment>
                     ) : ('')}
